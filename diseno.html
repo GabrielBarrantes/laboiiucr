@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es"> <!--define el inicio de la pagina y el lenguaje como español-->
+	<head>
+		<title>Diseño-Laboratorio Eléctrico II Experimento Final</title> <!--Tutulo que se leera en la pestana del navegador -->
+		<meta charset="utf-8"><!--define el juego de caracteres-->
+		<meta name="description" content="Reporte Experimento Final"><!--informacion adicional de la pagina, decripcion autor, etc-->
+		<meta name="author" content="Gabriel, Estefan">
+		<meta name="keywords" content="laboratorio,electrico,2,ucr,experimento,final,reporte"><!--Palabras clave que ayudaran a que la pagina sea encontrada -->
+	</head>
+	<body bgcolor="#FFFFFF">
+	<a id="primero"><h6></h6></a>
+	<center>
+	<img src="imagenes/portada1.png" width="1000" height="400">
+	</center>
+	<p style = "text-align: center; font-size: 40px; color:black;">Diseño:</p>
+	
+	<hr style="height:8px; color: black; background-color: black; border: 1px solid #000;" />
+	
+	
+
+	<p style = "text-align: left; font-size: 30px; color:black;">Diagrama de bloques general:</p>
+	<center><img src="imagenes/diagrama_bloques.JPG" width="600" height="500"></center>	
+	<hr style="height:8px; color: black; background-color: black; border: 1px solid #000;" />
+	<!--separador seccion-->
+	<p style = "text-align: left; font-size: 30px; color:black;">Generador de Onda cuadrada y Triangular:</p>
+	<center><img src="http://mathurl.com/y839jyvx.png"></center>
+	<p style = "text-align: justify; font-size: 20px; color:black;">En (Franco, 2005) se propone el siguiente circuito, en donde la carga y descarga del capacitor es controlada por el transistor que actúa como interruptor,  la frecuencia de la onda triangular generada esta dada por (2), donde R corresponde al valor de R4, que es la mitad de R3, VTH y VTL son las tensiones de umbral del disparador disparador smith. Con las selecciones realizadas se obtiene una constante de aproximadamente 12.5k, lo que permite variar la frecuencia en un rango de 0 Hz a 125 KHz con una variación de la tensión de entrada entre 0 V y 10 V.</p>
+	<center><img src="imagenes/esquematicoTriangular.jpg" width="700" height="500"></center>
+	<center><img src="imagenes/ondaTriangular.jpg" width="700" height="450"></center>
+	<p style = "text-align: justify; font-size: 20px; color:black;">	Se agrega un sumador adicional para centrar la señal de salida en cero, con lo que la señal de salida obtenida es TriangleO.</p>
+	<center><img src="imagenes/esquematicoTriangularSumador.jpg" width="600" height="500"></center>
+	<hr style="height:8px; color: black; background-color: black; border: 1px solid #000;" />
+	<!--separador seccion-->
+	<p style = "text-align: left; font-size: 30px; color:black;">Conversor logarítmico de onda triangular a senoidal:</p>
+	<p style = "text-align: justify; font-size: 20px; color:black;">Una implementación practica del esquema propuesto por (Franco, 2005) se puede observar en el esquematico siguiente. El potenciometro P1 se ajusta para lograr la mínima distorsión de la salida, mientras que el potenciometro P3 se ajusta para variar la amplitud de la salida.</p>
+	<center><img src="imagenes/esquematicoConversor.jpg" width="500" height="500"></center>	
+	<p style = "text-align: justify; font-size: 20px; color:black;">La salida del convertidor se observa en la siguiente gráfica, al ser la relación de entrada salida independiente de la frecuencia se obtiene un mayor rango de variación de la frecuencia de salida que solo esta limitada por la frecuencia de la onda triangular de entrada y por las características de los transistores, por lo que en este caso se seleccionaron transistores de amplio ancho de banda.</p>
+	<center><img src="imagenes/ondaSenoidal.jpg" width="700" height="450"></center>	
+
+	<hr style="height:8px; color: black; background-color: black; border: 1px solid #000;" />
+	<!--separador seccion-->
+	<p style = "text-align: left; font-size: 30px; color:black;">Selector nivel de offset:</p>
+	<p style = "text-align: justify; font-size: 20px; color:black;">Para la selección del nivel DC del circuito se utilizó un amplificador sumador de offset el cual mediante la manipulación del potenciómetro P1 se elige si elevar o disminuir el nivel DC, incluso para valores negativos de tensión. Como medida de protección se decide utilizar un nivel DC máximo de 7.211 V.
+En las figuras se puede observar el diagrama del circuito propuesto para esta configuración y los niveles de tensión cuando la posición del potenciómetro está en 0%, 50% y 100%.</p>
+	<center><img src="imagenes/circuito_nivel_dc.JPG" width="500" height="500"></center>
+	<center><img src="imagenes/nivel_dc.jpg" width="800" height="450"></center>
+	<hr style="height:8px; color: black; background-color: black; border: 1px solid #000;" />
+	<!--separador seccion-->
+	<p style = "text-align: left; font-size: 30px; color:black;">Amplificador de potencia y ganancia de salida:</p>
+	<p style = "text-align: justify; font-size: 20px; color:black;">ASASASAS.</p>
+	<center><img src="imagenes/potencia.JPG" width="700" height="500"></center>	
+	<hr style="height:8px; color: black; background-color: black; border: 1px solid #000;" />
+	<!--separador seccion-->	
+	<p style = "text-align: left; font-size: 30px; color:black;">Diseño de PCB hecho en KiCad</p>
+	<p style = "text-align: justify; font-size: 20px; color:black;">Se puede descargar un diseño de PCB hecho en Kicad en el siguiente enlace:</p>
+
+	<a href="pcb/pcb.kicad_pcb" download="pcb.kicad_pcb"><p style = "text-align: center; font-size: 18px; color:blue;"> Descargar PCB</p></a> <br/>
+
+	<hr style="height:8px; color: black; background-color: black; border: 1px solid #000;" />
+	<!--separador seccion-->		
+	
+	
+	<a href="#primero">Volver arriba</a> <a href="main.html">Volver a la página principal</a>
+	</body>
+</html>

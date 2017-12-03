@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es"> <!--define el inicio de la pagina y el lenguaje como español-->
+	<head>
+		<title>Nota Teórica-Laboratorio Eléctrico II Experimento Final</title> <!--Tutulo que se leera en la pestana del navegador -->
+		<meta charset="utf-8"><!--define el juego de caracteres-->
+		<meta name="description" content="Reporte Experimento Final"><!--informacion adicional de la pagina, decripcion autor, etc-->
+		<meta name="author" content="Gabriel, Estefan">
+		<meta name="keywords" content="laboratorio,electrico,2,ucr,experimento,final,reporte"><!--Palabras clave que ayudaran a que la pagina sea encontrada -->
+	</head>
+	<body bgcolor="#FFFFFF">
+	<a id="primero"><h6></h6></a>
+	<center>
+	<img src="imagenes/portada2.png" width="1000" height="400">
+	</center>
+	<p style = "text-align: center; font-size: 40px; color:black;">Nota Teórica:</p>
+	
+	
+	<p style = "text-align: justify; font-size: 20px; color:black;">En la electrónica analógica se suelen realizar distintas pruebas que eventualmente se aplican en el campo, y dichas pruebas en primera instancia se suelen realizar con un generador de señales, de funciones o de formas de onda las cuales son periódicas. El tipo de señal común que se utiliza es la señal senoidal, la cuadrada, y la triangular o diente de sierra. Estos generadores aparte de generar señales eléctricas le permite al usuario manipular aspectos tales como la tensión pico pico, el nivel DC, la frecuencia y en algunos dependiendo de qué tan novedosos sean se puede manejar el porcentaje de caída para señales cuadradas como también la simetría en señales triangulares, un ejemplo de este es el generador de funciones Agilent 332110A el cual posee todas las funciones anteriormente mencionadas.</p>
+
+	<hr style="height:8px; color: black; background-color: black; border: 1px solid #000;" />
+	
+	<p style = "text-align: left; font-size: 30px; color:black;">Generadores de onda cuadrada y triangular:</p>
+	<p style = "text-align: justify; font-size: 20px; color:black;">La ecuación que relaciona la tensión y la corriente en las terminales de un capacitor esta dada por (1), de donde se observa que si se mantiene una corriente constante de carga la razón de cambio de la tensión es constante (Franco, 2005), con lo que tiene la forma de una linea recta que puede ser aprovechada para generar ondas de forma triangular y de diente de sierra.</p>
+    <center><img src="http://mathurl.com/y8j54mnm.png"></center>
+	<p style = "text-align: justify; font-size: 20px; color:black;">Los generadores de onda triangular analógicos se suelen construir con un generador de onda cuadrada que sirve de señal de control para determinar la corriente de carga o descarga de un capacitor del cual se toma la onda triangular de salida. Entre las ventajas que tiene ese método es que además de la onda triangular se obtiene una onda cuadrada.
+En la practica es usual requerir que la frecuencia de oscilación sea controlable por una tensión de entrada, esto es un oscilador controlado por tensión (VCO), donde se tiene que <img src="http://mathurl.com/yco2pofy.png">, en la fuente (Franco, 2005) se recomienda una configuración que cumple las especificaciones requeridas y sera utilizada en esta practica.</p>
+
+
+	<hr style="height:8px; color: black; background-color: black; border: 1px solid #000;" />
+
+	<p style = "text-align: left; font-size: 30px; color:black;">Conversor logarítmico de onda triangular a senoidal:</p>
+	<p style = "text-align: justify; font-size: 20px; color:black;">Para implementar un conversor logarítmico de onda triangular a senoidal se utiliza un circuito que tenga una curva característica como la que se observa en la siguiente imagen.</p>
+	<center><img src="imagenes/vct.png" width="300" height="300"></center>
+	<p style = "text-align: justify; font-size: 20px; color:black;">En la practica esta VTC se consigue mediante la sobreexcitación apropiada de un par con diferencial emisor degenerado en una configuración como la que se observa abajo. Cerca de los puntos en los que la entrada cruza por cero, la ganancia del par es aproximadamente lineal; sin embargo, conforme la señal se aproxima a cada pico, uno de los BJT es llevado al borde del corte, donde la VTC se vuelve logarítmica y produce un redondeo gradual de la onda triangular.</p>
+	<center><img src="imagenes/prototipoConvertidor.png" width="300" height="350"></center>
+
+
+    <hr style="height:8px; color: black; background-color: black; border: 1px solid #000;" />
+    
+    <p style = "text-align: left; font-size: 30px; color:black;">Topología de conmutadores:</p>
+	<p style = "text-align: justify; font-size: 20px; color:black;">En cualquier labor humana siempre se hace presente la manipulación física de objetos y esto no es un acto ajeno para la manipulación de señales. Uno de los problemas a solucionar en este proyecto es seleccionar una única señal en la salida y que nunca estén dos tipos de señales presente ya que esto tendría un efecto de distorsión o simplemente no es la forma de onda adecuada.
+
+Define (Instruments, 2010) "<i>la topología de un conmutador es una representación organizacional de los canales y relés en un módulo de conmutación</i>". Existen dispositivos mecánicos que permiten el desarrollo de esta labor, resolviendo de muchas formas son los conmutadores y a continuación se presentarán algunas de las topologías más comunes o útiles en este proyecto tomado de (Electrónicos,
+1998).
+</p>
+	<p style = "text-align: left; font-size: 25px; color:black;">Conmutador genérico SPTD:</p>
+	<p style = "text-align: left; font-size: 20px; color:black;">Es denominado como conmutador de un polo doble tiro, solo existe una acción y pueden existir dos estados.</p>
+	<center><img src="imagenes/con1.JPG" width="200" height="200"></center>
+	<p style = "text-align: left; font-size: 25px; color:black;">Conmutador deslizante SPTD:</p>
+	<p style = "text-align: left; font-size: 20px; color:black;">La acción para cambiar el estado consiste en un deslizamiento de la palanca o perilla.</p>	
+	<center><img src="imagenes/con2.JPG" width="200" height="200"></center>
+	<p style = "text-align: left; font-size: 25px; color:black;">Conmutador múltiple:</p>
+	<p style = "text-align: left; font-size: 20px; color:black;">Permite mantener cambiar mediante una perilla más de dos distintos de estados.</p>
+	<center><img src="imagenes/con3.JPG" width="200" height="200"></center>
+	<p style = "text-align: left; font-size: 25px; color:black;">Conmutador múltiple giratorio:</p>
+	<p style = "text-align: left; font-size: 20px; color:black;">Tiene la ventaja que el accionar para cambiar de estado se realiza girando la perilla, este caso es muy visto en los ventiladores de techo.</p>
+	<center><img src="imagenes/con4.JPG" width="200" height="200"></center>
+	
+	<hr style="height:8px; color: black; background-color: black; border: 1px solid #000;" />
+	
+	<a href="#primero">Volver arriba</a> <a href="main.html">Volver a la página principal</a>
+	</body>
+</html>
