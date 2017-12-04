@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="es"> <!--define el inicio de la pagina y el lenguaje como español-->
 	<head>
 		<title>Diseño-Laboratorio Eléctrico II Experimento Final</title> <!--Tutulo que se leera en la pestana del navegador -->
@@ -19,7 +19,7 @@
 	
 
 	<p style = "text-align: left; font-size: 30px; color:black;">Diagrama de bloques general:</p>
-	<center><img src="imagenes/diagrama_bloques.JPG" width="600" height="500"></center>	
+	<center><img src="imagenes/diagrama_bloques.JPG" width="500" height="500"></center>	
 	<hr style="height:8px; color: black; background-color: black; border: 1px solid #000;" />
 	<!--separador seccion-->
 	<p style = "text-align: left; font-size: 30px; color:black;">Generador de Onda cuadrada y Triangular:</p>
@@ -46,9 +46,15 @@ En las figuras se puede observar el diagrama del circuito propuesto para esta co
 	<center><img src="imagenes/nivel_dc.jpg" width="800" height="450"></center>
 	<hr style="height:8px; color: black; background-color: black; border: 1px solid #000;" />
 	<!--separador seccion-->
+	<p style = "text-align: left; font-size: 30px; color:black;">Selector de salida:</p>
+	<p style = "text-align: justify; font-size: 20px; color:black;">Para la selección del tipo de señal que el usuario desee obtener en la salida del generador se utilizará un conmutador de un polo y dos tiros para cada señal de forma que solo una de estas puede estar habilitada en conducción.
+Esta señal será acoplada a un amplificador sumador de ganancia unitaria al cual se le agrega la el nivel DC previamente mencionado. En la figura se observa el diagrama del circuito a implementar con los tres interruptores, donde siempre el tiro que no se usa está puesto a tierra. Además se toma la decisión de que para tener la condición de ganancia unitaria en el cual R2=3R1 se usa tres resistores de 10 kΩ nominal en serie.</p>
+	<center><img src="imagenes/seleccion.JPG" width="500" height="300"></center>	
+	<hr style="height:8px; color: black; background-color: black; border: 1px solid #000;" />
+	<!--separador seccion-->	
 	<p style = "text-align: left; font-size: 30px; color:black;">Amplificador de potencia y ganancia de salida:</p>
-	<p style = "text-align: justify; font-size: 20px; color:black;">ASASASAS.</p>
-	<center><img src="imagenes/potencia.JPG" width="700" height="500"></center>	
+	<p style = "text-align: justify; font-size: 20px; color:black;">Finalmente para la etapa de amplificación de potencia se elige usar un amplificador operacional en la configuración de seguidor de tensión tal como se observa en la siguiente figura, el cual permite no distorsionar la señal de tensión y  amplificar la potencia para que no se distorsione la señal con las cargas conectadas.</p>
+	<center><img src="imagenes/potencia.JPG" width="400" height="300"></center>	
 	<hr style="height:8px; color: black; background-color: black; border: 1px solid #000;" />
 	<!--separador seccion-->	
 	<p style = "text-align: left; font-size: 30px; color:black;">Diseño de PCB hecho en KiCad</p>
@@ -63,3 +69,4 @@ En las figuras se puede observar el diagrama del circuito propuesto para esta co
 	<a href="#primero">Volver arriba</a> <a href="main.html">Volver a la página principal</a>
 	</body>
 </html>
+
